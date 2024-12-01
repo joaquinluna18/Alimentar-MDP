@@ -12,103 +12,219 @@ body{
 }
 
 /*header*/
-.head{
-    display: flexbox;
-}
-.header{
-    display: flex; /* Activa Flexbox */
-     min-height: 50px; /* Define la altura del contenedor */
-     background-color: rgb(129, 9, 9); /* Color de fondo para visualizar mejor */
-     align-items: center; /* Alinea los elementos al centro del eje transversal */
-     justify-content: center;
-     flex-direction: row;
-     padding: 10px;
-     position: fixed;
-     left: 0;
-     right: 0;
-     z-index: 1050;
-   
-     
-}
-.imagen-header{
-    background-attachment: scroll;
-    width: 100%;
-    display: flex;
-    padding: 100px;
-    padding-bottom: 30px;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(240, 250, 255);
-
-}
-.nav-item{
-    display: flex;
-    flex-direction: row;
-    padding: 15px;
-    color: wheat;
-    
-
-}
-
-.nav-link{
-    font-family: Arial, Helvetica, sans-serif; /* fuente*/
-    text-decoration: none;
-    transition: transform 0.3s ease, color 0.3s ease; /* Transición suave para el cambio de tamaño y color */
-
-}
-
-.nav-link:hover{
-  transform: scale(1.005);
-}
-
-.nav-item:hover{
-    color: rgb(187, 59, 65);
-    transition: color 0.3s ease; /* Transición suave para el cambio de color */
-
-
-}
-
-
-.nav-justify-content-center{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    
-}
-/*footer*/
-.cont-footer{
-  background-color: black;
-	max-width: 100%;
-	margin: 0 auto;
-	height: 200px;
-	padding: 10%;
- 
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-}
-.footer-list{
-  justify-content: center;
-  
-}
-
-.footer-list-li{
-  color: white ;
-  text-decoration: none;
-  
-}
-
-
-.footer-copyright{
+/* Estilos básicos para el header */
+.head {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.footer-copyright-text{
-  color: rgb(87, 86, 85);
+.container-fluid{
+  padding: 10px;
+}
+
+/* Cambiar color del ícono de la hamburguesa */
+.navbar-toggler-icon {
+  background-color: #e09728; /* Aquí le pones el color dorado que mencionaste */
+}
+
+/* Navbar siempre fijo en la parte superior */
+.navbar {
+  background-color: rgb(129, 9, 9); /* Color de fondo */
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1050;
+  width: 100%;
+  box-sizing: border-box;
+  transition: top 0.3s; /* Transición suave */
+}
+
+/* Logo en la barra de navegación */
+#logo {
+  max-height: 50px; /* Ajusta el tamaño del logo */
+}
+
+/* Logo debajo del navbar */
+.imagen-header {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(240, 250, 255); /* Fondo claro */
+  padding: 20px 0;
+  box-sizing: border-box;
+  padding-top: 4%;
+  position: relative; /* Necesario para posicionar el navbar encima de la imagen */
+
+ 
+}
+
+/* Ajustes del logo cuando está debajo del navbar */
+#logo-bajo {
+  max-height: 170px; /* Ajuste del tamaño del logo cuando está debajo */
+ 
+}
+
+/* Estilos de los enlaces del menú */
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+/* Ajuste para que el menú hamburguesa quede por encima de la imagen */
+.navbar-toggler {
+  z-index: 2; /* Coloca el menú hamburguesa encima de la imagen */
+}
+
+.nav-link {
+  color: #FFD700; /* Color dorado para los enlaces */
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  transform: scale(1.05);
+  color: rgb(187, 59, 65); /* Rojo cuando se pasa el mouse */
+}
+/* Ajustar la imagen para que no se solape completamente con el navbar */
+.imagen-header img {
+  max-width: 100%;
+  height: auto;
+  z-index: 1; /* Asegura que la imagen quede debajo del navbar */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 767px) {
+  .imagen-header {
+    padding-top: 25%;  
+  }
+
+}
+
+/*footer*/
+.cont-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  background-color: black;
+  color: white;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.footer-list-ul {
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-list-li {
+  padding: 8px 0;
+  text-align: center;
+  font-size: 1rem; /* Ajuste del tamaño de fuente */
+  color: white;
+  text-decoration: none;
+}
+
+.footer-copyright {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.footer-copyright img {
+  max-width: 150px; /* Ajuste el tamaño del logo */
+  margin-bottom: 10px;
+}
+
+.footer-copyright-text {
+  font-size: 0.9rem;
   text-align: center;
 }
+
+
+
+
+/*FOOTER RESPOSNIVE*/
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .cont-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 10px;
+      background-color: black;
+      color: white;
+  }
+
+  .footer-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px 0;
+  }
+
+  .footer-list-ul {
+      padding-left: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-list-li {
+      padding: 8px 0;
+      text-align: center;
+      font-size: 1rem; /* Ajuste del tamaño de fuente */
+      color: white;
+  }
+
+  .footer-copyright {
+      text-align: center;
+      width: 100%;
+      margin-top: 20px;
+  }
+
+  .footer-copyright img {
+      max-width: 150px; /* Ajuste el tamaño del logo */
+      margin-bottom: 10px;
+  }
+
+  .footer-copyright-text {
+      font-size: 0.9rem;
+      text-align: center;
+  }
+}
+
+/* Media Queries para pantallas aún más pequeñas */
+@media (max-width: 480px) {
+  .footer-list-li {
+      font-size: 0.85rem; /* Ajuste del tamaño de fuente */
+  }
+
+  .footer-copyright-text {
+      font-size: 0.8rem;
+  }
+}
+
+
+
+
+
 
 /*main*/
 /* Estilo para el icono de WhatsApp */
@@ -181,7 +297,7 @@ body{
 
 .tarjetas-container {
   display: flex;
-  animation: scrollCarousel 70s linear infinite;  /* Animación para desplazamiento automático */
+  animation: scrollCarousel 78s linear infinite;  /* Animación para desplazamiento automático */
   gap: 16px;
   padding: 20px;
   scroll-snap-type: x mandatory;  /* Hace que el scroll se alinee a cada tarjeta */
@@ -199,6 +315,7 @@ body{
   scroll-snap-align: center;  /* Alinea las tarjetas al centro durante el scroll */
   text-align: center;
   transition: transform 0.3s ease;  /* Animación suave al pasar el mouse */
+  text-decoration: none;
 }
 
 .tarjeta-imagen {
@@ -212,8 +329,12 @@ body{
   margin: 16px 0 8px;
   font-weight: bold;
   color: rgb(77, 6, 6);
-}
+  text-decoration: none;
+  }
 
+h3{
+  text-decoration: none;
+}
 .tarjeta:hover {
   transform: scale(1.05);
 }
@@ -281,26 +402,103 @@ color:rgb(129, 9, 9);
     justify-content: space-between;
 }
 
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  /* Ajuste del texto dentro de los contenedores */
+  .contenedor-main-rc-texto h1 {
+      font-size: 1.5rem; /* Reducir tamaño de texto */
+      text-align: center;
+  }
+
+  .contenedor-main-rc-texto h4 {
+      font-size: 1rem; /* Reducir tamaño de texto */
+      text-align: center;
+  }
+
+  /* Ajustes del contenedor para la sección de información sobre la empresa */
+  .contenedor-main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .contenedor-main-texto h1 {
+      font-size: 1.5rem; /* Ajustar tamaño de fuente */
+  }
+
+  .contenedor-main-texto h3 {
+      font-size: 1rem; /* Ajustar tamaño de fuente */
+  }
+
+  .img-main {
+      max-width: 100%; /* Hacer que la imagen ocupe el 100% del ancho disponible */
+      height: auto; /* Ajustar la altura de manera proporcional */
+      margin-top: 20px;
+  }
+
+  /* Sección de repartos */
+  .contenedor-main-repartos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .contenedor-main-repartos img {
+      max-width: 100%; /* Hacer que la imagen ocupe el 100% del ancho disponible */
+      height: auto; /* Ajustar la altura de manera proporcional */
+      margin-top: 20px;
+  }
+
+  .contenedor-main-repartos-tex h1 {
+      font-size: 1.5rem;
+  }
+
+  .contenedor-main-repartos-tex h4 {
+      font-size: 1rem;
+  }
+}
+
+/* Media Queries para pantallas extra pequeñas */
+@media (max-width: 480px) {
+  /* Ajustar aún más el tamaño de texto para pantallas muy pequeñas */
+  .contenedor-main-rc-texto h1 {
+      font-size: 1.2rem;
+  }
+
+  .contenedor-main-rc-texto h4 {
+      font-size: 0.9rem;
+  }
+
+  .contenedor-main-texto h1 {
+      font-size: 1.2rem;
+  }
+
+  .contenedor-main-texto h3 {
+      font-size: 0.9rem;
+  }
+
+  .contenedor-main-repartos-tex h1 {
+      font-size: 1.2rem;
+  }
+  .cont-info h5{
+    font-size: 0.8rem;
+  }
+  .cont-info h6{
+    font-size: 0.8rem;
+  }
+
+}
+
+
+
+
+
 /*sobre nos*/
-.contenedor-main-ubicacion{
-  background-color: #e09728;
-  ;
-  display: flex;
-	width: 100%;
-	padding: 7%;
-	padding-top: 2%;
-	padding-bottom: 2%
-}
-.img-ubicacion{
-    width: 55%;
-    height: auto;
-    border-radius: 8px;
-}
-.contenedor-main-ubicacion-texto{
-  text-align: right;
-  color: rgb(129, 9, 9);
-  padding: 1%;
-}
+
 .contenedor-qs{
   background-color: #e09728;
   display: flex;
@@ -600,6 +798,28 @@ ul {
 
 /*contacto*/
 /* Estilos para el contenedor del formulario */
+.contenedor-main-ubicacion{
+  background-color: #e09728;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+	width: 100%;
+	padding: 7%;
+	padding-top: 2%;
+	padding-bottom: 2%
+}
+.img-ubicacion{
+    width: 55%;
+    height: auto;
+    border-radius: 8px;
+}
+.contenedor-main-ubicacion-texto{
+  text-align: right;
+  color: rgb(129, 9, 9);
+  padding: 1%;
+}
+
 .cont-formulario {
   background-color: #e09728;
 
@@ -673,6 +893,7 @@ button:hover {
 @media (min-width: 601px) and (max-width: 1024px) {
   .cont-formulario-form {
       max-width: 600px;
+      padding: 5%;
   }
 }
 
@@ -680,6 +901,7 @@ button:hover {
   margin: 20px; /* Agrega un margen alrededor de la sección si lo necesitas */
   text-align: center;
 }
+
 
 .footer-list-contact{
   text-align: left; /* Alinea todo el contenido dentro de este div a la izquierda */
@@ -706,16 +928,32 @@ button:hover {
   transform: scale(1.05);  /* Escala ligeramente el item cuando el mouse pasa sobre él */
 }
 
-@media screen and (max-width:600px){
-    
 
+
+/* Responsividad: en pantallas pequeñas (máximo 767px) */
+@media (max-width: 767px) {
+  .contenedor-main-ubicacion {
+      flex-direction: column; /* Cambia la dirección de los elementos para que se apilen en pantallas pequeñas */
+      text-align: center;
+  }
+
+  .contenedor-main-ubicacion-texto {
+      padding-left: 0;
+      padding-top: 20px;
+  }
+
+  .img-ubicacion {
+      max-width: 100%; /* La imagen ocupará el 100% del ancho en pantallas pequeñas */
+  }
+
+  .footer-list-ul-contacto {
+      flex-direction: column; /* En pantallas pequeñas, los enlaces se mostrarán en una columna */
+  }
+
+  .footer-list-li-contac {
+      font-size: 16px; /* Reducir el tamaño de los enlaces para pantallas pequeñas */
+  }
 }
-
-
-
-
-
-
 
 
 
