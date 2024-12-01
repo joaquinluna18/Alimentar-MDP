@@ -1,0 +1,423 @@
+{
+  "acordeon": [
+    {
+      "id": 1,
+      "titulo": "La Maria Pilar Estancias",
+      "imagen": "/imagenes/la-maria-pilar.png",
+      "productos": [
+        "Queso Holanda",
+        "Queso Cuartirolo",
+        "Queso Cuartirolo s/sal",
+        "Queso Pategras",
+        "Queso Azul"
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Roasted",
+      "imagen": "/imagenes/roasted.png",
+      "productos": [
+        "Mani",
+        "Mani Con Cascara",
+        "Mani Cervecero Original",
+        "Mani Cervecero Saborizado"
+        
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Paladini",
+      "imagen": "/imagenes/paladini.png",
+      "productos": [
+        "Fiambres",
+        "Embutidos",
+        "Medallones de Pollo",
+        "Hamburguesas"
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Cagnoli",
+      "imagen": "/imagenes/cagnoli.png",
+      "productos": [
+        "Salamin",
+        "Sorpressata",
+        "Fuet",
+        "Salamin Ahumado",
+        "Salamin Picante",
+        "Fiambres"
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "Cooperativa Arroyo Cabral",
+      "imagen": "/imagenes/coop-arroyo.png",
+      "productos": [
+        "Queso Reggianito",
+        "Queso Sardo",
+        "Queso Fymbo",
+        "Queso en Barra",
+        "Queso Gouda",
+        "Queso Untable",
+        "Dulce de Leche"
+      ]
+    },
+    {
+      "id": 6,
+      "titulo": "Tonadita",
+      "imagen": "/imagenes/tonadita.png",
+      "productos": [
+        "Queso Crema Cremmette",
+        "Queso Crema Patagonia",
+        "Queso Untable",
+        "Queso en Feta (varios)",
+        "Manteca",
+        "Crema",
+        "Dulce de Leche"
+      ]
+    },
+    {
+      "id": 7,
+      "titulo": "Cumaná",
+      "imagen": "/imagenes/cumana.png",
+      "productos": [
+        "Conservas",
+        "Especias",
+        "Frutos Secos"
+      ]
+    },
+    {
+      "id": 8,
+      "titulo": "Frigorico El Bierzo",
+      "imagen": "/imagenes/bierzo.png",
+      "productos": [
+        "Fiambres",
+        "Embutidos"
+      ]
+    },
+    {
+      "id": 9,
+      "titulo": "Los Quebrachitos",
+      "imagen": "/imagenes/quebrachito.png",
+      "productos": [
+        "Dulce de Leche"
+      ]
+    },
+    {
+      "id": 10,
+      "titulo": "La Union de Schachenmayr",
+      "imagen": "/imagenes/la-union.png",
+      "productos": [
+        "Queso Cremoso",
+        "Queso Gouda",
+        "Queso Sardo"
+      ]
+    },
+    {
+      "id": 11,
+      "titulo": "Dulcor",
+      "imagen": "/imagenes/dulcor.png",
+      "productos": [
+        "Dulces",
+        "Mermelada"
+      ]
+    },
+    {
+      "id": 12,
+      "titulo": "Dragone",
+      "imagen": "/imagenes/dragone.jpg",
+      "productos": [
+        "Matambre Arrollado"
+      ]
+    },
+    {
+      "id": 13,
+      "titulo": "Nonna Pia",
+      "imagen": "/imagenes/logo-nona-pia.jpg",
+      "productos": [
+        "Provoleta",
+        "Quesos de campo"
+      ]
+    },
+    {
+      "id": 14,
+      "titulo": "Ilolay",
+      "imagen": "/imagenes/ilolay.jpg",
+      "productos": [
+        "Yogur",
+        "Queso Crema",
+        "Chocolatada",
+        "Dulce de Leche"
+      ]
+    },
+    {
+      "id": 15,
+      "titulo": "Vanoli",
+      "imagen": "/imagenes/vanoli.jpg",
+      "productos": [
+        "Aceitunas",
+        "Encurtidos",
+        "Salsa"
+      ]
+    },
+    {
+      "id": 16,
+      "titulo": "Emperador",
+      "imagen": "/imagenes/emperador.jpg",
+      "productos": [
+        "Queso Azul"
+      ]
+    },
+    {
+      "id": 17,
+      "titulo": "Veronica",
+      "imagen": "/imagenes/veronica.jpg",
+      "productos": [
+        "Crema",
+        "Leche",
+        "Manteca"
+      ]
+    },
+    {
+      "id": 18,
+      "titulo": "Milkaut",
+      "imagen": "/imagenes/milkaut.png",
+      "productos": [
+        "Queso Cheddar",
+        "Crema"
+      ]
+    },
+    {
+      "id": 19,
+      "titulo": "La Paulina",
+      "imagen": "/imagenes/la-paulina.png",
+      "productos": [
+        "Queso Crema",
+        "Quesos Untables",
+        "Quesos Blandos",
+        "Queso Parmesano"
+      ]
+    },
+    {
+      "id": 20,
+      "titulo": "Adler",
+      "imagen": "/imagenes/adler.png",
+      "productos": [
+        "Queso Fundido Saborizados"
+      ]
+    },
+    {
+      "id": 21,
+      "titulo": "Frigorico Goggi",
+      "imagen": "/imagenes/goggi.jpeg",
+      "productos": [
+        "Fiambre",
+        "Embutidos"
+      ]
+    },
+    {
+      "id": 22,
+      "titulo": "Campo Austral",
+      "imagen": "/imagenes/campo-austral.jpg",
+      "productos": [
+        "Fiambres",
+        "Embutidos"
+      ]
+    },
+    {
+      "id": 23,
+      "titulo": "Bocatti",
+      "imagen": "/imagenes/bocatti.jpg",
+      "productos": [
+        "Fiambres",
+        "Pate",
+        "Lomo Horneado",
+        "Ribs"
+      ]
+    },
+    {
+      "id": 24,
+      "titulo": "Levex",
+      "imagen": "/imagenes/levex.png",
+      "productos": [
+        "Levadura"
+      ]
+    },
+    {
+      "id": 25,
+      "titulo": "Abumalek",
+      "imagen": "/imagenes/abuamlek.png",
+      "productos": [
+        "Encurtidos",
+        "Especias"
+      ]
+    },
+    {
+      "id": 26,
+      "titulo": "Marvavic",
+      "imagen": "/imagenes/marvavic.png",
+      "productos": [
+        "Aceitunas",
+        "Encurtidos"
+      ]
+    },
+    {
+      "id": 27,
+      "titulo": "Copeto",
+      "imagen": "/imagenes/copeto.jpg",
+      "productos": [
+        "Garrapiñadas",
+        "Snacks"
+      ]
+    },
+    {
+      "id": 28,
+      "titulo": "Danica",
+      "imagen": "/imagenes/danica.jpg",
+      "productos": [
+        "Aderezo",
+        "Manteca"
+      ]
+    },
+    {
+      "id": 29,
+      "titulo": "Hellman´s",
+      "imagen": "/imagenes/hellmans.jpg",
+      "productos": [
+        "Mayonesa"
+      ]
+    },
+    {
+      "id": 30,
+      "titulo": "Porta",
+      "imagen": "/imagenes/porta.png",
+      "productos": [
+        "Alcohol etilico"
+      ]
+    },
+    {
+      "id": 31,
+      "titulo": "Bahia",
+      "imagen": "/imagenes/bahia.png",
+      "productos": [
+        "Enlatados"
+      ]
+    },
+    {
+      "id": 32,
+      "titulo": "Olivicola Gullo",
+      "imagen": "/imagenes/olivicola-gullo.png",
+      "productos": [
+        "Aceitunas",
+        "Aceites",
+        "Encurtidos"
+      ]
+    },
+    {
+      "id": 33,
+      "titulo": "Lacteos Tio Pujio",
+      "imagen": "/imagenes/tio-pujio.png",
+      "productos": [
+        "Queso Parmesano"
+      ]
+    },
+    {
+      "id": 34,
+      "titulo": "Frigorifico Riosma",
+      "imagen": "/imagenes/riosma.png",
+      "productos": [
+        "Fiambres",
+        "Embutidos"
+      ]
+    },
+    {
+      "id": 35,
+      "titulo": "Quesos Don Atilio",
+      "imagen": "/imagenes/don-atilio.png",
+      "productos": [
+        "Queso Gouda",
+        "Quesos Saborizados"
+      ]
+    },
+    {
+      "id": 36,
+      "titulo": "Rincon Chico",
+      "imagen": "/imagenes/rincon chico.png",
+      "productos": [
+        "Tapa Empanadas",
+        "Tapa Tarta"
+      ]
+    },
+    {
+      "id": 37,
+      "titulo": "Frigorico El Araucano",
+      "imagen": "/imagenes/araucano.png",
+      "productos": [
+        "Fiambres",
+        "Embutidos"
+      ]
+    },
+    {
+      "id": 38,
+      "titulo": "La Piamontesa",
+      "imagen": "/imagenes/piamontesa.png",
+      "productos": [
+        "Fiambres",
+        "Embutidos"
+      ]
+    },
+    {
+      "id": 39,
+      "titulo": "Servio",
+      "imagen": "/imagenes/servio.webp",
+      "productos": [
+        "Manteca"
+      ]
+    },
+    {
+      "id": 40,
+      "titulo": "Calchaqui",
+      "imagen": "/imagenes/calchaqui.png",
+      "productos": [
+        "Mortadela"
+      ]
+    },
+    {
+      "id": 41,
+      "titulo": "Papiks",
+      "imagen": "/imagenes/papiks.jpg",
+      "productos": [
+        "Mani Cervecero Original",
+        "Mani Cervecero Saborizado",
+        "Palitos"
+      ]
+    },
+    {
+      "id": 42,
+      "titulo": "La Cucharita",
+      "imagen": "/imagenes/cucharita.jpg",
+      "productos": [
+        "Ricota"
+      ]
+    },
+    {
+      "id": 43,
+      "titulo": "El Artesano",
+      "imagen": "/imagenes/artesano.jpg",
+      "productos": [
+        "Jamon Crudo"
+      ]
+    },
+    {
+      "id": 44,
+      "titulo": "Frigorifico Percam",
+      "imagen": "/imagenes/percam.avif",
+      "productos": [
+        "Fiambres",
+        "Embutidos"
+      ]
+    }
+  ]
+}
+
+  

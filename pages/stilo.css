@@ -1,0 +1,722 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'ill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* fuente*/
+    background-color: #e09728;
+    
+    
+}
+
+/*header*/
+.head{
+    display: flexbox;
+}
+.header{
+    display: flex; /* Activa Flexbox */
+     min-height: 50px; /* Define la altura del contenedor */
+     background-color: rgb(129, 9, 9); /* Color de fondo para visualizar mejor */
+     align-items: center; /* Alinea los elementos al centro del eje transversal */
+     justify-content: center;
+     flex-direction: row;
+     padding: 10px;
+     position: fixed;
+     left: 0;
+     right: 0;
+     z-index: 1050;
+   
+     
+}
+.imagen-header{
+    background-attachment: scroll;
+    width: 100%;
+    display: flex;
+    padding: 100px;
+    padding-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(240, 250, 255);
+
+}
+.nav-item{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    color: wheat;
+    
+
+}
+
+.nav-link{
+    font-family: Arial, Helvetica, sans-serif; /* fuente*/
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease; /* Transición suave para el cambio de tamaño y color */
+
+}
+
+.nav-link:hover{
+  transform: scale(1.005);
+}
+
+.nav-item:hover{
+    color: rgb(187, 59, 65);
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+
+
+}
+
+
+.nav-justify-content-center{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+}
+/*footer*/
+.cont-footer{
+  background-color: black;
+	max-width: 100%;
+	margin: 0 auto;
+	height: 200px;
+	padding: 10%;
+ 
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer-list{
+  justify-content: center;
+  
+}
+
+.footer-list-li{
+  color: white ;
+  text-decoration: none;
+  
+}
+
+
+.footer-copyright{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-copyright-text{
+  color: rgb(87, 86, 85);
+  text-align: center;
+}
+
+/*main*/
+/* Estilo para el icono de WhatsApp */
+#whatsapp-icon {
+  position: fixed;
+  bottom: 20px; /* Distancia desde el borde inferior de la pantalla */
+  right: 20px;  /* Distancia desde el borde derecho de la pantalla */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto suave para el hover */
+
+}
+
+/* Estilo para la imagen del icono de WhatsApp */
+#whatsapp-icon img {
+  width: 60px;  /* Tamaño del icono */
+  height: 60px; /* Tamaño del icono */
+  border-radius: 50%; /* Opcional: para hacer que el icono sea redondeado */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional para dar un efecto de profundidad */
+}
+
+/* Efecto hover */
+#whatsapp-icon:hover img {
+  transform: scale(1.1); /* Aumenta el tamaño del icono */
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para dar un efecto más destacado */
+}
+
+
+.carousel-inner {
+    height:500px; /* Altura fija para el carrusel */
+  }
+
+  .carousel-item {
+    height: 100%; /* Hace que cada imagen ocupe el 100% de la altura del carrusel */
+    width: 100%;
+  }
+
+  .carousel-item img {
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio disponible sin distorsionarse */
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: 100%; /* Hace que la imagen ocupe toda la altura del contenedor */
+  }
+
+.contenedor-main{
+    background-color: #e09728;
+    display: flex;
+	  width: 100%;
+    padding: 7%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    align-items: center;
+}
+.contenedor-main-texto{
+    padding-right: 2%;
+    font-weight: bold;
+   color: rgb(129, 9, 9);
+}
+.contenedor-marcas{
+  background-color: #e09728;
+  overflow: hidden; /* Evita que el contenido se salga del contenedor */
+  padding: 0 10px; /* Añadimos un poco de espacio a los lados */
+
+}
+.contenedor-marcas-titulo{
+  padding-left: 8%;
+  padding-top: 2%;
+  padding-bottom: 0px;
+  color: rgb(129, 9, 9);
+}
+
+
+.tarjetas-container {
+  display: flex;
+  animation: scrollCarousel 70s linear infinite;  /* Animación para desplazamiento automático */
+  gap: 16px;
+  padding: 20px;
+  scroll-snap-type: x mandatory;  /* Hace que el scroll se alinee a cada tarjeta */
+  scroll-padding: 0 10px;  /* Ajuste de espacio para el scroll */
+}
+
+.tarjeta {
+  flex: 0 0 auto;  /* Hace que las tarjetas no se estiren */
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  scroll-snap-align: center;  /* Alinea las tarjetas al centro durante el scroll */
+  text-align: center;
+  transition: transform 0.3s ease;  /* Animación suave al pasar el mouse */
+}
+
+.tarjeta-imagen {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.tarjeta-titulo {
+  font-size: 1.2rem;
+  margin: 16px 0 8px;
+  font-weight: bold;
+  color: rgb(77, 6, 6);
+}
+
+.tarjeta:hover {
+  transform: scale(1.05);
+}
+/* Animación para el desplazamiento automático */
+@keyframes scrollCarousel {
+  0% {
+    transform: translateX(0);  /* Inicia en la posición original */
+  }
+  100% {
+    transform: translateX(-750%);  /* Mueve todo el contenido fuera del contenedor */
+  }
+}
+
+.contenedor-main-rc{
+  background-color: #e08b08;
+  width: 100%;
+  padding: 7%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+/* Estilo inicial para las secciones (ocultas y desplazadas) */
+.hidden-section {
+  opacity: 0; /* Inicia invisibles */
+  transform: translateY(50px); /* Desplazadas hacia abajo */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Animación suave */
+}
+
+/* Estilo cuando la clase 'visible-section' es añadida */
+.visible-section {
+  opacity: 1; /* Se vuelve visible */
+  transform: translateY(0); /* Vuelve a su posición original */
+}
+
+
+.contenedor-main-rc-texto{
+text-align: right;
+color:rgb(129, 9, 9);
+}
+
+.contenedor-main-repartos{
+  display: flex;
+  background-color: #e08b08;
+  width: 100%;
+  padding: 7%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  align-items: center;
+}
+
+.contenedor-main-repartos-tex{
+text-align: right;
+color:rgb(129, 9, 9);
+}
+
+.cont-info{
+  background-color: #e08b08;
+  width: 100%;
+  padding: 7%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: left;
+  color:rgb(129, 9, 9);
+  display: flex;
+    justify-content: space-between;
+}
+
+/*sobre nos*/
+.contenedor-main-ubicacion{
+  background-color: #e09728;
+  ;
+  display: flex;
+	width: 100%;
+	padding: 7%;
+	padding-top: 2%;
+	padding-bottom: 2%
+}
+.img-ubicacion{
+    width: 55%;
+    height: auto;
+    border-radius: 8px;
+}
+.contenedor-main-ubicacion-texto{
+  text-align: right;
+  color: rgb(129, 9, 9);
+  padding: 1%;
+}
+.contenedor-qs{
+  background-color: #e09728;
+  display: flex;
+	width: 100%;
+	padding: 7%;
+	padding-top: 2%;
+	padding-bottom: 2%
+}
+.contenedor-qs-text{
+  align-items: left;
+  color: rgb(129, 9, 9);
+  padding: 1%;
+}
+.contenedor-qs-mision{
+  background-color: #e09728;
+  display: flex;
+  width: 100%;
+  padding: 7%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  justify-content: flex-end; /* Alinea el contenedor al lado derecho */
+}
+.contenedor-qs-mision-tex{
+  color: rgb(129, 9, 9);
+  padding: 1%;
+  text-align: right; /* Alinea el texto a la derecha */
+}
+
+.cont-sn{
+  width: 100%;
+  height: 50%;
+  background-color: #e09728;
+
+  padding: 3%;
+}
+.cont-sn-img{
+  height: auto;
+  width: 70%;
+}
+
+
+/*marcas*/
+
+
+/* Estilos básicos del acordeón */
+
+.accordion-item input[type="checkbox"] {
+  display: none;
+}
+
+.accordion-item label {
+  display: block;
+  background-color: #e09728;
+  ;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.accordion-item .content {
+  display: none;
+  padding: 10px;
+  background-color: #fafafa;
+}
+
+.accordion-item input[type="checkbox"]:checked + label + .content {
+  display: block;
+}
+
+.accordion-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li h5 {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+
+
+
+.cont-nmarcas{
+  background-color: #e09728;
+
+  padding-bottom: 4%;
+  
+}
+
+/* Estilo para el acordeón */
+.accordion {
+  width: 100%;
+  max-width: 50%;  /* Se ajusta  al ancho de la pantalla */
+  margin: 0 auto;
+   background-color: #e09728;
+  ;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgb(223, 6, 6);
+  
+}
+
+/* Estilo de cada item del acordeón */
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+  transition: transform 0.3s ease;
+}
+
+/* Ocultar el input tipo checkbox */
+.accordion input[type="checkbox"] {
+  display: none;
+}
+
+/* Estilo de los labels (botones del acordeón) */
+.accordion label {
+  display: block;
+  padding: 15px;
+  background-color: rgb(129, 9, 9);
+  color: #ec7545;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  border: none;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.3s ease;  /* Animación suave para el fondo y la transformación */
+}
+/* Efecto de hover sobre el label del acordeón */
+.accordion label:hover {
+  transform: scale(1.05);  /* Escala ligeramente el item cuando el mouse pasa sobre él */
+  background-color: rgb(184, 61, 61);  /* Cambia el color de fondo al pasar el mouse */
+}
+
+/* Cambiar color de fondo cuando el acordeón está abierto */
+.accordion input[type="checkbox"]:checked + label {
+  background-color:  rgb(63, 5, 5);;
+}
+
+/* Estilo del contenido oculto */
+.accordion .content {
+  display: none;
+  padding: 10px;
+  background-color: rgb(247, 135, 71);
+  color:rgb(54, 0, 0) ;
+}
+
+/* Mostrar contenido cuando el input está checked */
+.accordion input[type="checkbox"]:checked + label + .content {
+  display: block;
+}
+
+/* Contenedor para imagen y listado, usa flexbox */
+.content-wrapper {
+  display: flex;
+  align-items: center;  /* Alinea la imagen y el texto verticalmente */
+  gap: 20px;  /* Espacio entre la imagen y el listado */
+}
+
+/* Imagen dentro del contenido, inicialmente oculta */
+.accordion-image {
+  display: none;
+  width: 150px;
+  height: auto;
+}
+
+/* Mostrar la imagen cuando el acordeón se despliega */
+.accordion input[type="checkbox"]:checked + label + .content .accordion-image {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out; /* Animación suave para la imagen */
+}
+
+/* Animación para la imagen */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Listado a la derecha, no cambia, solo se alinea con la imagen */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .accordion label {
+      font-size: 14px; /* Ajustar el tamaño del texto */
+      padding: 12px; /* Reducir el padding en pantallas pequeñas */
+  }
+
+  .accordion .content {
+      font-size: 14px; /* Ajustar el tamaño del contenido */
+      padding: 12px; /* Reducir el padding en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .accordion label {
+      font-size: 12px; /* Ajustar aún más el tamaño del texto */
+      padding: 10px; /* Reducir el padding aún más */
+  }
+
+  .accordion .content {
+      font-size: 12px; /* Ajustar el tamaño del contenido */
+      padding: 10px; /* Reducir el padding aún más */
+  }
+}
+/* Contenedor para el campo de búsqueda */
+.search-container {
+  width: 40%;
+  display: flex;
+  justify-content: center; /* Centra el input horizontalmente */
+  margin: 20px 0; /* Espaciado alrededor del campo de búsqueda */
+  padding-left: 8%;
+}
+
+/* Estilo para el campo de búsqueda */
+.search-bar {
+  width: 20px;  /* Ancho fijo, puedes cambiarlo según tus necesidades */
+  padding: 10px;
+  margin: 0 auto; /* Centrado automático */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+
+
+/*PRODUCTOS*/
+
+
+.cont-produc{
+  background-color: #e09728;
+
+
+}
+
+.cont-produc-tex{
+  color: rgb(129, 9, 9);
+
+  padding: 7%;
+  padding-bottom: 2%;
+
+}
+
+.lista-prod{
+  padding-left: 4%
+}
+
+.lista-prod-item{
+  padding-left: 10%;
+  font-size: 20px;
+}
+
+.cont-list{
+   background-color: #e09728;
+  ;
+  text-align: center;
+  margin: 0;
+  max-width: 100%;
+  padding-bottom: 8%;
+
+}
+
+.link-list-precio{
+  color: rgb(14, 14, 143);
+  text-decoration-color: rgb(14, 14, 143);; /* Cambia el color del subrayado */ 
+  text-decoration: underline; /* Mantiene el subrayado */
+   
+}
+
+.link-list-precio:hover{
+  transform: scale(1.005);
+  color: rgb(48, 48, 224);
+  text-decoration-color: rgb(48, 48, 224);; /* Cambia el color del subrayado */
+  
+  
+}
+
+
+
+/*contacto*/
+/* Estilos para el contenedor del formulario */
+.cont-formulario {
+  background-color: #e09728;
+
+  display: flex;
+  justify-content: center; /* Centra los elementos dentro de .cont-formulario */
+  align-items: center; /* Centra verticalmente el contenido */
+  height: 20%; /* El contenedor ocupará toda la altura disponible */
+  width: 100%; /* El contenedor ocupa todo el ancho */
+  color:rgb(129, 9, 9);;
+  padding-bottom: 4%;
+  flex-direction: column;
+}
+
+/* Estilos para el formulario */
+.cont-formulario-form {
+  background-color: #d83b15;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ocupa el 100% del ancho disponible */
+  max-width: 500px; /* Máximo ancho de 500px para el formulario */
+  box-sizing: border-box;
+}
+
+/* Estilos para las etiquetas de los campos */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Estilo para el botón de envío */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color:rgb(129, 9, 9);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:rgb(173, 44, 44);
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  .cont-formulario-form {
+      padding: 15px;
+      max-width: 100%;
+  }
+
+  input[type="text"], input[type="email"], textarea, button {
+      font-size: 14px;
+  }
+}
+
+/* Estilos para pantallas medianas (tabletas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .cont-formulario-form {
+      max-width: 600px;
+  }
+}
+
+.form-redes{
+  margin: 20px; /* Agrega un margen alrededor de la sección si lo necesitas */
+  text-align: center;
+}
+
+.footer-list-contact{
+  text-align: left; /* Alinea todo el contenido dentro de este div a la izquierda */
+  
+  
+}
+
+.footer-list-ul-contact{
+  color:rgb(129, 9, 9);
+    text-decoration: none;
+  
+}
+
+.footer-list-li-contac{
+    display: flex;             /* Usamos flexbox */
+    align-items: center;       /* Alineamos el contenido verticalmente en el centro */
+    justify-content: center;   /* Alineamos el contenido horizontalmente */
+    gap: 10px;                 /* Espaciado entre el icono y el texto */
+    color:rgb(129, 9, 9);
+    text-decoration: none;
+
+}
+.footer-list-li-contac:hover {
+  transform: scale(1.05);  /* Escala ligeramente el item cuando el mouse pasa sobre él */
+}
+
+@media screen and (max-width:600px){
+    
+
+}
+
+
+
+
+
+
+
+
+
+
