@@ -57,6 +57,7 @@
         "Queso Sardo",
         "Queso Fymbo",
         "Queso en Barra",
+        "Queso Cheddar",
         "Queso Gouda",
         "Queso Untable",
         "Dulce de Leche"
@@ -327,7 +328,8 @@
       "imagen": "/imagenes/riosma.png",
       "productos": [
         "Fiambres",
-        "Embutidos"
+        "Embutidos",
+        "214"
       ]
     },
     {
@@ -416,7 +418,17 @@
         "Fiambres",
         "Embutidos"
       ]
+    },
+    {
+      "id": 45,
+      "titulo": "Mc Cain",
+      "imagen": "/imagenes/McCain.png",
+      "productos": [
+        "Papas Congeladas",
+        "Vegetales Congelados"
+      ]
     }
+
   ]
 }
 
