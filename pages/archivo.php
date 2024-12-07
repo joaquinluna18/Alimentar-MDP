@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensaje = htmlspecialchars($_POST['mensaje']);
 
     // Correo al que se enviarán los datos
-    $to = "joacoluna1998@gmail.com";  // Cambia esto por tu correo
+    $to = "iair@alimentarmdp.com.ar";  // Cambia esto por tu correo
 
     // Asunto del correo
     $subject = "Nuevo mensaje desde el formulario de contacto de alimentar";
